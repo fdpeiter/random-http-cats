@@ -56,7 +56,7 @@ jobs:
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: semantic-release $DRY_RUN_OPT
+      run: npx semantic-release
 
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v5
