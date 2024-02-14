@@ -10,3 +10,10 @@ plugins:
     - publishCmd: |
         echo "${nextRelease.notes}" > /tmp/release-notes.md
         goreleaser release --release-notes /tmp/release-notes.md --clean
+
+preset: eslint
+success: false
+fail: false
+npmPublish: false
+tarballDir: false
+tagFormat: "${version}"
