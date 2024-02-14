@@ -48,7 +48,8 @@ jobs:
         node-version: 20
 
     - name: Install dependencies
-      run: npm install -g semantic-release @semantic-release/github @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/git @semantic-release/exec
+      run: npm install -g semantic-release @semantic-release/github @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/git @semantic-release/exec conventional-changelog-conventionalcommits conventional-changelog-eslint
+
     - name: Install Goreleaser
       run: go install github.com/goreleaser/goreleaser@latest
 
