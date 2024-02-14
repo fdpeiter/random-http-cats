@@ -1,0 +1,23 @@
+{
+  "name": "random-http-cats",
+  "version": "1.0.0",
+  "description": "Small Gin server that retrieves a random HTTP status from https://http.cat/",
+  "main": "app/main.go",
+  "scripts": {
+    "start": "make run",
+    "build": "make build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdpeiter/random-http-cats.git"
+  },
+  "keywords": ["golang", "gin", "http-cats"],
+  "author": "Felipe Peiter",
+"license": "Apache-2.0",
+  "dependencies": {
+    "gin": "^1.9.1",
+    "logrus": "^1.9.3"
+  },
+  "devDependencies": {
+  }
+}
