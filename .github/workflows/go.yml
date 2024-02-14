@@ -42,8 +42,14 @@ jobs:
     - name: Install Goreleaser
       run: go install github.com/goreleaser/goreleaser@latest
 
-    - name: Run Goreleaser
-      run: goreleaser release --rm-dist
+    - name: Run GoReleaser
+      uses: goreleaser/goreleaser-action@v5
+      with:
+        distribution: goreleaser
+        version: latest
+        args: release --clean
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
