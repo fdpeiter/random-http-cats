@@ -1,5 +1,5 @@
 # Start from a minimal base image with Go 1.21.6 installed
-FROM golang:1.21.6-alpine AS builder
+FROM golang:1.22.2-alpine AS builder
 
 # Set the working directory
 WORKDIR /app

@@ -17,6 +17,8 @@ func SetupRouter() *gin.Engine {
 	// Cat routes
 	r.GET("/randomcat", handlers.RandomCatHandler)
 	r.GET("/specificcat/:statusCode", handlers.SpecificCatHandler)
+	r.GET("/healthz", handlers.Healthz)
+	r.GET("/readyz", handlers.Readyz)
 
 	return r
 }
