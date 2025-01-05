@@ -11,15 +11,15 @@ GOPATH := $(shell go env GOPATH)
 
 # The command to build the application
 build:
-    go build -o $(APPNAME) ./app
+	go build -o dist/$(APPNAME) ./app
 
 # The command to run tests
 test:
-    go test ./...
+	go test ./...
 
 # The command to clean up
 clean:
-    rm -f $(APPNAME)
+	rm -f $(APPNAME)
 
 run:
-    go run ./app/main.go
+	go run ./app/main.go
