@@ -12,6 +12,7 @@ dockers:
       - "docker.io/fdpeiter/random-http-cats:{{ .Version }}"
       - "docker.io/fdpeiter/random-http-cats:latest"
     dockerfile: ./Dockerfile
+    use: buildx
     goos: linux
     goarch: amd64,arm64
     skip_push: false
